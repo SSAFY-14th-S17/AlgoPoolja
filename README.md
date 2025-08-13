@@ -33,6 +33,23 @@
 
 </details>
 
+<details>
+<summary><strong>📁 Week 2 - IM/A SW역량테스트 준비</strong></summary>
+
+| 번호 | 문제          | 문제 페이지                                                                                                                                                                                                                                                        |
+| -- | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1  | DFS와 BFS 문제 | [🔗 링크](https://www.acmicpc.net/problem/1260)                                                                                                                                                                                                                 |
+| 2  | 오목판정        | [🔗 링크](https://swexpertacademy.com/main/talk/solvingClub/problemView.do?solveclubId=AZg2OLnqix_HBINp&contestProbId=AXaSUPYqPYMDFASQ&probBoxId=AZiC5zoKCNPHBINp&type=PROBLEM&problemBoxTitle=IM%EB%8C%80%EB%B9%84%EB%AC%B8%EC%A0%9C&problemBoxCnt=14)         |
+| 3  | 토마토         | [🔗 링크](https://www.acmicpc.net/problem/7576)                                                                                                                                                                                                                 |
+| 4  | 핀볼게임        | [🔗 링크](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AWXRF8s6ezEDFAUo&categoryId=AWXRF8s6ezEDFAUo&categoryType=CODE&problemTitle=5650&orderBy=FIRST_REG_DATETIME&selectCodeLang=ALL&select-1=&pageSize=10&pageIndex=1)        |
+| 5  | 원재의 메모리복구하기 | [🔗 링크](https://swexpertacademy.com/main/talk/solvingClub/problemView.do?solveclubId=AZg2OLnqix_HBINp&contestProbId=AV19AcoKI9sCFAZN&probBoxId=AZiC5zoKCNPHBINp&type=PROBLEM&problemBoxTitle=IM%EB%8C%80%EB%B9%84%EB%AC%B8%EC%A0%9C&problemBoxCnt=14)         |
+| 6  | 빙고          | [🔗 링크](https://www.acmicpc.net/problem/2578)                                                                                                                                                                                                                 |
+| 7  | 최적 경로       | [🔗 링크](https://swexpertacademy.com/main/code/problem/problemDetail.do?problemLevel=5&contestProbId=AV15OZ4qAPICFAYD&categoryId=AV15OZ4qAPICFAYD&categoryType=CODE&problemTitle=&orderBy=INQUERY_COUNT&selectCodeLang=ALL&select-1=5&pageSize=10&pageIndex=1) |
+
+</details>
+
+</details>
+
 ---
 
 ## 📁 프로젝트 구조
@@ -60,3 +77,71 @@ AlgoPoolja/
 ├── README.md                     # 프로젝트 소개 문서
 ├── .project                      # STS 등에서 사용하는 설정 파일
 ```
+
+
+## pull Request 하는법 
+다음은 README에 넣을 수 있는 **Pull Request(PR) 생성 방법** 정리입니다.
+GitHub 웹 화면 예시(첨부 이미지)와 함께 터미널 명령어를 포함해 단계별로 작성했습니다.
+
+---
+
+## 📌 Pull Request(PR) 생성 방법
+
+### 1. 브랜치 생성 및 작업
+
+```bash
+# 원격 저장소 최신 상태로 동기화
+git fetch origin
+
+# 새 브랜치 생성 및 이동 (예: week2/이름)
+git checkout -b week{N}/이름 
+```
+
+---
+
+### 2. 코드 수정 및 커밋
+
+```bash
+# 변경된 파일 확인
+git status
+
+# 변경 파일 스테이징
+git add .
+
+# 커밋 메시지 작성 (예: [N주차/이름] 문제풀이)
+git commit -m "[N주차/이름] 문제풀이"
+```
+
+---
+
+### 3. 원격 저장소로 브랜치 푸시
+
+```bash
+git push origin week{N}/이름 (생성한 브랜치 이름 )
+```
+
+---
+
+### 4. GitHub에서 Pull Request 생성
+
+1. GitHub 저장소 접속
+2. `Compare & pull request` 버튼 클릭
+3. **제목**: `[N주차/이름] 문제풀이` <- 이게 생성되어있을 겁니다.
+4. **설명**: 변경 내용 간단히 작성
+5. `Create pull request` 클릭
+
+---
+
+### 5. PR 확인 및 머지
+
+* 리뷰어가 코드 리뷰 후 `Merge pull request` 버튼 클릭
+* 머지 완료 후 브랜치 삭제 권장
+
+```bash
+# 로컬 브랜치 삭제
+git branch -d week1/이름
+
+# 원격 브랜치 삭제
+git push origin --delete week1/이름
+
+---
