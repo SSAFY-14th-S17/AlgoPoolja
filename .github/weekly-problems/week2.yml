@@ -4,7 +4,7 @@ problems:
   - number: 1
     title: "DFS와 BFS 문제"
     platform: "BOJ"
-    level: "S3"
+    level: "Silver3"
     url: "https://www.acmicpc.net/problem/1260"
   - number: 2
     title: "오목판정"
@@ -14,7 +14,7 @@ problems:
   - number: 3
     title: "토마토"
     platform: "BOJ"
-    level: "G5"
+    level: "Gold5"
     url: "https://www.acmicpc.net/problem/7576"
   - number: 4
     title: "핀볼게임"
@@ -29,7 +29,7 @@ problems:
   - number: 6
     title: "빙고"
     platform: "BOJ"
-    level: "S4"
+    level: "Silver4"
     url: "https://www.acmicpc.net/problem/2578"
   - number: 7
     title: "최적 경로"
