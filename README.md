@@ -47,7 +47,20 @@
 | 7  | 최적 경로       | [🔗 링크](https://swexpertacademy.com/main/code/problem/problemDetail.do?problemLevel=5&contestProbId=AV15OZ4qAPICFAYD&categoryId=AV15OZ4qAPICFAYD&categoryType=CODE&problemTitle=&orderBy=INQUERY_COUNT&selectCodeLang=ALL&select-1=5&pageSize=10&pageIndex=1) |
 
 </details>
+<details>
+<summary><strong>📁 Week 3 - A형 + 알고리즘 월말평가 준비</strong></summary>
 
+| 번호 | 문제          | 문제 페이지                                                                                                                                                                                                                                                        |
+| -- | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1  | 면접          | [🔗 링크](https://codeforces.com/contest/337/problem/C)                                                                                                                                                                                                                 |
+| 2  | 줄기세포 배양  | [🔗 링크](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AWXRJ8EKe48DFAUo&categoryId=AWXRJ8EKe48DFAUo&categoryType=CODE&problemTitle=%EC%A4%84%EA%B8%B0%EC%84%B8%ED%8F%AC&orderBy=FIRST_REG_DATETIME&selectCodeLang=ALL&select-1=&pageSize=10&pageIndex=1)         |
+| 3  | 최단경로      | [🔗 링크](https://www.acmicpc.net/problem/1753)                                                                                                                                                                                                                 |
+| 4  | 적녹색약        | [🔗 링크](https://www.acmicpc.net/problem/10026)        |
+| 5  | 수영장          | [🔗 링크](https://swexpertacademy.com/main/talk/solvingClub/problemView.do?solveclubId=AZg2OLnqix_HBINp&contestProbId=AV5PpFQaAQMDFAUq&probBoxId=AZiZUuOaWvPHBIT9&type=PROBLEM&problemBoxTitle=A%ED%98%95%EB%8C%80%EB%B9%84%EB%AC%B8%EC%A0%9C&problemBoxCnt=24)         |
+| 6  | 벽돌 깨기        | [🔗 링크](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AWXRQm6qfL0DFAUo)  |
+| 7  | 바이러스       | [🔗 링크](https://www.acmicpc.net/problem/2606) |
+
+</details>
 </details>
 
 ---
