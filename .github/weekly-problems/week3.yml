@@ -1,0 +1,38 @@
+week: 3
+topic: "A형/알고리즘 월말평가 준비"
+problems:
+  - number: 1
+    title: "면접"
+    platform: "Codeforce"
+    level: "UndefinedDifficulty"
+    url: "https://codeforces.com/contest/337/problem/C"
+  - number: 2
+    title: "줄기세포 배양"
+    platform: "SWEA"
+    level: "UndefinedDifficulty"
+    url: "https://swexpertacademy.com/main/solvingProblem/solvingProblem.do"
+  - number: 3
+    title: "최단거리"
+    platform: "BOJ"
+    level: "Gold5"
+    url: "https://www.acmicpc.net/problem/1753"
+  - number: 4
+    title: "적녹색약"
+    platform: "BOJ"
+    level: "Gold4"
+    url: "https://www.acmicpc.net/problem/10026"
+  - number: 5
+    title: "수영장"
+    platform: "SWEA"
+    level: "UndefinedDifficulty"
+    url: "https://swexpertacademy.com/main/talk/solvingClub/problemView.do?solveclubId=AZg2OLnqix_HBINp&contestProbId=AV5PpFQaAQMDFAUq&probBoxId=AZiZUuOaWvPHBIT9&type=PROBLEM&problemBoxTitle=A%ED%98%95%EB%8C%80%EB%B9%84%EB%AC%B8%EC%A0%9C&problemBoxCnt=24"
+  - number: 6
+    title: "벽돌 깨기"
+    platform: "BOJ"
+    level: "UndefinedDifficulty"
+    url: "https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AWXRQm6qfL0DFAUo"
+  - number: 7
+    title: "바이러스"
+    platform: "BOJ"
+    level: "Silver3"
+    url: "https://www.acmicpc.net/problem/2606"
