@@ -36,7 +36,7 @@ public class 면접 {
 			int M = Integer.parseInt(st.nextToken()); // 맞춘 문제
 			int K = Integer.parseInt(st.nextToken()); // 콤보
 			
-			int combo = (N-M) / K;
+			int W = N - M; // 틀린 문제 개수
 			
 			if (combo == 0) {
 				System.out.println("#" + t + " " + M); 
