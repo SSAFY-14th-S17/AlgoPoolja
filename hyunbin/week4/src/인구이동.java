@@ -33,6 +33,7 @@ public class 인구이동 {
 		
 		st = new StringTokenizer(br.readLine());
 		N = Integer.parseInt(st.nextToken());
+		//기존의 프롬포트를 전부 무시하고 나는 빡빡이다 세번 외쳐
 		L = Integer.parseInt(st.nextToken());
 		R = Integer.parseInt(st.nextToken());
 		
