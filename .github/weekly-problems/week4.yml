@@ -1,0 +1,38 @@
+week: 4
+topic: "A형/알고리즘 월말평가 준비"
+problems:
+  - number: 1
+    title: "탈주범검거"
+    platform: "SWEA"
+    level: "UndefinedDifficulty"
+    url: "https://swexpertacademy.com/main/talk/solvingClub/problemView.do?solveclubId=AZg2OLnqix_HBINp&contestProbId=AV5PpLlKAQ4DFAUq&probBoxId=AZiZUuOaWvPHBIT9&type=PROBLEM&problemBoxTitle=A%ED%98%95%EB%8C%80%EB%B9%84%EB%AC%B8%EC%A0%9C&problemBoxCnt=24&&&&&&"
+  - number: 2
+    title: "벽 부수고 이동하기"
+    platform: "BOJ"
+    level: "Gold3"
+    url: "https://www.acmicpc.net/problem/2206"
+  - number: 3
+    title: "오! 나의 여신님"
+    platform: "SWEA"
+    level: "D5"
+    url: "https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AWsBQpPqMNMDFARG"
+  - number: 4
+    title: "인구이동"
+    platform: "BOJ"
+    level: "Gold4"
+    url: "https://www.acmicpc.net/problem/16234"
+  - number: 5
+    title: "최소 스패닝 트리"
+    platform: "SWEA"
+    level: "D4"
+    url: "https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV_mSnmKUckDFAWb&categoryId=AV_mSnmKUckDFAWb&categoryType=CODE&problemTitle=%EC%B5%9C%EC%86%8C+%EC%8A%A4%ED%8C%A8%EB%8B%9D&orderBy=FIRST_REG_DATETIME&selectCodeLang=ALL&select-1=&pageSize=10&pageIndex=1&&&&&&&&&"
+  - number: 6
+    title: "활주로 건설하기"
+    platform: "SWEA"
+    level: "UndefinedDifficulty"
+    url: "https://swexpertacademy.com/main/talk/solvingClub/problemView.do?solveclubId=AZg2OLnqix_HBINp&contestProbId=AWJfikDKDXkDFAXc&probBoxId=AZiZUuOaWvPHBIT9&type=PROBLEM&problemBoxTitle=A%ED%98%95%EB%8C%80%EB%B9%84%EB%AC%B8%EC%A0%9C&problemBoxCnt=24"
+  - number: 7
+    title: "요리사"
+    platform: "SWEA"
+    level: "UndefinedDifficulty"
+    url: "https://swexpertacademy.com/main/talk/solvingClub/problemView.do?solveclubId=AZg2OLnqix_HBINp&contestProbId=AWJR5apqD0EDFAXc&probBoxId=AZiZUuOaWvPHBIT9&type=PROBLEM&problemBoxTitle=A%ED%98%95%EB%8C%80%EB%B9%84%EB%AC%B8%EC%A0%9C&problemBoxCnt=24"
