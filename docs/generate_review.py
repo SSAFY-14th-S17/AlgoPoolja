@@ -79,42 +79,44 @@ def send_prompt():
        - (B) 대안 해법: 알고리즘을 교체(복잡도/단순성 비교 포함).
     
     [출력 규격(JSON, 반드시 이 스키마 준수)]
-    {
+    {{
         "assumptions": ["불명확 사양에 대한 명시적 가정..."],
       "summary": "한 문장 핵심 평가",
       "verdict": "pass | needs_fix | fail",
-      "score": {
+      "score": {{
         "correctness": 0-10,
         "complexity": 0-10,
         "style": 0-10,
         "overall": 0-100
-      },
+      }},
       "issues": [
-        {"title":"정확성", "evidence":"근거/해당 코드 라인/논리", "fix":"수정 방향"},
-        {"title":"복잡도", "evidence":"병목 근거", "fix":"개선 제안"},
-        {"title":"안정성", "evidence":"경계/예외", "fix":"보호 코드"}
+        {{"title":"정확성", "evidence":"근거/해당 코드 라인/논리", "fix":"수정 방향"}},
+        {{"title":"복잡도", "evidence":"병목 근거", "fix":"개선 제안"}},
+        {{"title":"안정성", "evidence":"경계/예외", "fix":"보호 코드"}}
       ],
-      "complexity": {
+      "complexity": {{
         "identified_algo": "예: O(n log n) 정렬 + 투포인터",
         "time": "O(...)", 
         "space": "O(...)",
         "bottlenecks": ["..."]
-      },
+      }},
       "tests": [
-        {"name":"기본","input":"...","expected":"...","reason":"정상 플로우"},
-        {"name":"경계-최소","input":"...","expected":"...","reason":"n=0/1"},
-        {"name":"경계-최대","input":"...","expected":"...","reason":"최악 시간"},
-        {"name":"중복/특수","input":"...","expected":"...","reason":"코너 케이스"},
-        {"name":"비정상","input":"...","expected":"...","reason":"에러 방어(필요시)"}
+        {{"name":"기본","input":"...","expected":"...","reason":"정상 플로우"}},
+        {{"name":"경계-최소","input":"...","expected":"...","reason":"n=0/1"}},
+        {{"name":"중복/특수","input":"...","expected":"...","reason":"코너 케이스"}},
+        {{"name":"중복/특수","input":"...","expected":"...","reason":"코너 케이스"}},
+        {{"name":"중복/특수","input":"...","expected":"...","reason":"코너 케이스"}},
+        {{"name":"비정상","input":"...","expected":"...","reason":"에러 방어(필요시)"}},
+        {{"name":"경계-최대","input":"...","expected":"...","reason":"최악 시간"}},
       ],
-      "improvements": {
+      "improvements": {{
         "patch_notes": "라인 단위 변경 요약(불필요한 전체 재작성 금지)",
         "alt_approach": "대안 알고리즘 요지 + 의사코드",
         "when_to_use_alt": "입력 특성/한도에 따른 선택 기준",
         "readability_tips": ["네이밍", "함수 분리", "I/O 최적화"]
-      },
+      }},
       "plagiarism_risk": "low | medium | high (선택, 스타일/구현 패턴 기준 추정)"
-    }
+    }}
     
     [작성 규칙]
     - 내부 추론 과정/사고사슬 노출 금지. 결론/근거만.
