@@ -61,7 +61,21 @@
 | 7  | 바이러스       | [🔗 링크](https://www.acmicpc.net/problem/2606) |
 
 </details>
+<details>
+<summary><strong>📁 Week 4 - A형 + 알고리즘 월말평가 준비</strong></summary>
+
+| 번호 | 문제              | 문제 페이지                                                                                                                                                                                                                                                        |
+| -- | ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1  | 탈주범검거          | [🔗 링크](https://swexpertacademy.com/main/talk/solvingClub/problemView.do?solveclubId=AZg2OLnqix_HBINp&contestProbId=AV5PpLlKAQ4DFAUq&probBoxId=AZiZUuOaWvPHBIT9&type=PROBLEM&problemBoxTitle=A%ED%98%95%EB%8C%80%EB%B9%84%EB%AC%B8%EC%A0%9C&problemBoxCnt=24&&&&&&) |
+| 2  | 벽 부수고 이동하기     | [🔗 링크](https://www.acmicpc.net/problem/2206)                                                                                                                                                                                                                 |
+| 3  | 오! 나의 여신님       | [🔗 링크](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AWsBQpPqMNMDFARG)                                                                                                                                                       |
+| 4  | 인구이동             | [🔗 링크](https://www.acmicpc.net/problem/16234)                                                                                                                                                                                                                 |
+| 5  | 최소 스패닝 트리       | [🔗 링크](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV_mSnmKUckDFAWb&categoryId=AV_mSnmKUckDFAWb&categoryType=CODE&problemTitle=%EC%B5%9C%EC%86%8C+%EC%8A%A4%ED%8C%A8%EB%8B%9D&orderBy=FIRST_REG_DATETIME&selectCodeLang=ALL&select-1=&pageSize=10&pageIndex=1&&&&&&&&&) |
+| 6  | 활주로 건설하기        | [🔗 링크](https://swexpertacademy.com/main/talk/solvingClub/problemView.do?solveclubId=AZg2OLnqix_HBINp&contestProbId=AWJfikDKDXkDFAXc&probBoxId=AZiZUuOaWvPHBIT9&type=PROBLEM&problemBoxTitle=A%ED%98%95%EB%8C%80%EB%B9%84%EB%AC%B8%EC%A0%9C&problemBoxCnt=24) |
+| 7  | 요리사              | [🔗 링크](https://swexpertacademy.com/main/talk/solvingClub/problemView.do?solveclubId=AZg2OLnqix_HBINp&contestProbId=AWJR5apqD0EDFAXc&probBoxId=AZiZUuOaWvPHBIT9&type=PROBLEM&problemBoxTitle=A%ED%98%95%EB%8C%80%EB%B9%84%EB%AC%B8%EC%A0%9C&problemBoxCnt=24) |
+
 </details>
+
 
 ---
 
