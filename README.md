@@ -75,6 +75,16 @@
 | 7  | 요리사              | [🔗 링크](https://swexpertacademy.com/main/talk/solvingClub/problemView.do?solveclubId=AZg2OLnqix_HBINp&contestProbId=AWJR5apqD0EDFAXc&probBoxId=AZiZUuOaWvPHBIT9&type=PROBLEM&problemBoxTitle=A%ED%98%95%EB%8C%80%EB%B9%84%EB%AC%B8%EC%A0%9C&problemBoxCnt=24) |
 
 </details>
+<details>
+<summary><strong>📁 Week 5 - 역랑테스트 대비 + 알고리즘 심화 </strong></summary>
+
+| 번호 | 문제            | 문제 페이지                                                                 |
+| -- | --------------- | ------------------------------------------------------------------------ |
+| 1  | 치즈             | [🔗 링크](https://www.acmicpc.net/problem/2638) |
+| 2  | 색종이 만들기       | [🔗 링크](https://www.acmicpc.net/problem/2630) |
+| 3  | 특정한 최단경로     | [🔗 링크](https://www.acmicpc.net/problem/1504) |
+
+</details>
 
 
 ---
