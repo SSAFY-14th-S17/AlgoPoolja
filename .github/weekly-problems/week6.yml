@@ -1,0 +1,23 @@
+week: 5
+topic: "9월2주차"
+problems:
+  - number: 1
+    title: "사람 네트워크2"
+    platform: "SWEA"
+    level: "D6"
+    url: "https://swexpertacademy.com/main/code/problem/problemDetail.do?problemLevel=6&problemLevel=7&contestProbId=AV18P2B6Iu8CFAZN&categoryId=AV18P2B6Iu8CFAZN&categoryType=CODE&problemTitle=&orderBy=INQUERY_COUNT&selectCodeLang=ALL&select-1=7&pageSize=10&pageIndex=1"
+  - number: 2
+    title: "작업 순서"
+    platform: "BOJ"
+    level: "D6"
+    url: "https://swexpertacademy.com/main/code/problem/problemDetail.do?problemLevel=5&problemLevel=6&contestProbId=AV18TrIqIwUCFAZN&categoryId=AV18TrIqIwUCFAZN&categoryType=CODE&problemTitle=&orderBy=INQUERY_COUNT&selectCodeLang=ALL&select-1=6&pageSize=10&pageIndex=1"
+  - number: 3
+    title: "다리 만들기"
+    platform: "BOJ"
+    level: "Gold3"
+    url: "https://www.acmicpc.net/problem/2146"
+  - number: 4
+    title: "파핑파핑 지뢰찾기"
+    platform: "SWEA"
+    level: "D4"
+    url: "https://swexpertacademy.com/main/talk/solvingClub/problemView.do?solveclubId=AZg2OLnqix_HBINp&contestProbId=AV5LwsHaD1MDFAXc&probBoxId=AZkiYPNa9hTHBIO0&type=PROBLEM&problemBoxTitle=250908%EB%AC%B8%EC%A0%9C%EB%B0%95%EC%8A%A4%28%EC%84%A0%ED%83%9D%29&problemBoxCnt=1"
