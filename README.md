@@ -84,34 +84,6 @@
 
 
 ---
-
-## 📁 프로젝트 구조
-```
-AlgoPoolja/
-├── .github/
-│   ├── workflows/                 # GitHub Actions 워크플로우 (자동화)
-│   └── weekly-problems/          # 주차별 문제 YAML 파일
-│       └── week1.yml
-├── bin/
-│   └── Main.class                # 컴파일된 클래스 파일 (Java)
-├── docs/
-│   └── problems/
-│       └── week1/                # 주차별 힌트 파일 모음
-│           ├── 13038_교환학생_힌트.md
-│           ├── 5215_햄버거다이어트_힌트.md
-│           └── ...
-├── hyunbin/                      # 팀원별 풀이/코드 저장소
-├── dohee/                        # 여기선 파일 자유롭게 사용
-├── jimin/
-├── minseung/
-├── seho/
-├── youyeon/
-├── .gitignore                    # Git 무시 파일 설정
-├── README.md                     # 프로젝트 소개 문서
-├── .project                      # STS 등에서 사용하는 설정 파일
-```
-
-
 ## pull Request 하는법 
 다음은 README에 넣을 수 있는 **Pull Request(PR) 생성 방법** 정리입니다.
 GitHub 웹 화면 예시(첨부 이미지)와 함께 터미널 명령어를 포함해 단계별로 작성했습니다.
