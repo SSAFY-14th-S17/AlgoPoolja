@@ -1,26 +1,11 @@
-# 🧠 SSAFY Algorithm Study - AlgoPoolja
-
-> **알고리즘 알고풀자**  
-> SSAFY 알고리즘 스터디 *AlgoPoolja*에 오신 것을 환영합니다 💻🌱  
-> 백준, SW Expert Academy 등 다양한 플랫폼에서 문제를 풀고,  
-> 코드 리뷰와 힌트 문서를 통해 문제를 풀고 velog에 풀이 글을 작성해보자!
+# SSAFY Algorithm Study - AlgoPoolja
 
 ---
 
-## 📌 스터디 진행 방식
-
-- 매주 **1회 문제 출제** (6문제)
-- 플랫폼: `BOJ`, `SWEA` 등 다양하게 선정
-- 난이도: `Silver`, `Gold`, `D2~D4`
-- 문제는 `.github/weekly-problems/weekN.yml` 에서 관리
-- 각 문제 힌트는 `docs/problems/weekN/` 폴더에 `문제명_힌트.md`로 정리
-
----
-
-## 🗂 주차별 문제 모음 (문제 & 힌트 링크)
+## 🗂 주차별 문제 바로가기
 
 <details>
-<summary><strong>📁 Week 1 - 완전탐색</strong></summary>
+<summary><strong>📁 Week 1 - 8월1주차: 완전탐색</strong></summary>
 
 | 번호 | 문제 | 문제 | 힌트 |
 |------|------|------|------|
@@ -34,7 +19,7 @@
 </details>
 
 <details>
-<summary><strong>📁 Week 2 - IM/A SW역량테스트 준비</strong></summary>
+<summary><strong>📁 Week 2 - 8월2주차: IM/A SW역량테스트 준비</strong></summary>
 
 | 번호 | 문제          | 문제 페이지                                                                                                                                                                                                                                                        |
 | -- | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -48,7 +33,7 @@
 
 </details>
 <details>
-<summary><strong>📁 Week 3 - A형 + 알고리즘 월말평가 준비</strong></summary>
+<summary><strong>📁 Week 3 - 8월3주차: A형 + 알고리즘 월말평가 준비</strong></summary>
 
 | 번호 | 문제          | 문제 페이지                                                                                                                                                                                                                                                        |
 | -- | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -62,7 +47,7 @@
 
 </details>
 <details>
-<summary><strong>📁 Week 4 - A형 + 알고리즘 월말평가 준비</strong></summary>
+<summary><strong>📁 Week 4 - 8월4주차: A형 + 알고리즘 월말평가 준비</strong></summary>
 
 | 번호 | 문제              | 문제 페이지                                                                                                                                                                                                                                                        |
 | -- | ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -76,13 +61,24 @@
 
 </details>
 <details>
-<summary><strong>📁 Week 5 - 역랑테스트 대비 + 알고리즘 심화 </strong></summary>
+<summary><strong>📁 Week 5 - 9월1주차: 역랑테스트 대비 + 알고리즘 심화 </strong></summary>
 
 | 번호 | 문제            | 문제 페이지                                                                 |
 | -- | --------------- | ------------------------------------------------------------------------ |
 | 1  | 치즈             | [🔗 링크](https://www.acmicpc.net/problem/2638) |
 | 2  | 색종이 만들기       | [🔗 링크](https://www.acmicpc.net/problem/2630) |
 | 3  | 특정한 최단경로     | [🔗 링크](https://www.acmicpc.net/problem/1504) |
+
+</details>
+<details>
+<summary><strong>📁 Week 6 - 9월2주차 : 알고리즘 심화 과목평가 대비 </strong></summary>
+
+| 번호 | 문제                 | 문제 페이지                                                                 |
+| -- | -------------------- | ------------------------------------------------------------------------ |
+| 1  | 사람 네트워크2           | [🔗 링크](https://swexpertacademy.com/main/code/problem/problemDetail.do?problemLevel=6&problemLevel=7&contestProbId=AV18P2B6Iu8CFAZN&categoryId=AV18P2B6Iu8CFAZN&categoryType=CODE&problemTitle=&orderBy=INQUERY_COUNT&selectCodeLang=ALL&select-1=7&pageSize=10&pageIndex=1) |
+| 2  | 작업 순서                | [🔗 링크](https://swexpertacademy.com/main/code/problem/problemDetail.do?problemLevel=5&problemLevel=6&contestProbId=AV18TrIqIwUCFAZN&categoryId=AV18TrIqIwUCFAZN&categoryType=CODE&problemTitle=&orderBy=INQUERY_COUNT&selectCodeLang=ALL&select-1=6&pageSize=10&pageIndex=1) |
+| 3  | 다리 만들기               | [🔗 링크](https://www.acmicpc.net/problem/2146) |
+| 4  | 파핑파핑 지뢰찾기           | [🔗 링크](https://swexpertacademy.com/main/talk/solvingClub/problemView.do?solveclubId=AZg2OLnqix_HBINp&contestProbId=AV5LwsHaD1MDFAXc&probBoxId=AZkiYPNa9hTHBIO0&type=PROBLEM&problemBoxTitle=250908%EB%AC%B8%EC%A0%9C%EB%B0%95%EC%8A%A4%28%EC%84%A0%ED%83%9D%29&problemBoxCnt=1) |
 
 </details>
 
