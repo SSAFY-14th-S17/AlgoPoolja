@@ -28,7 +28,7 @@ public class swea6808_카드게임 {
 	
 	static int[] kyuCards= new int[9];
 	static int[] inCards= new int[9];
-	static int[] inCardCases = new int[9];
+	static int[] inCardCase = new int[9];
 	static final int TotalCount = 362880;
 	static int kyuWincount;
 	
@@ -92,7 +92,7 @@ public class swea6808_카드게임 {
 	private static void inCardsOrder(int depth,boolean[] visited) {
 		// base-case
 		if(depth ==9) {
-			countKyuWin(inCardCases);
+			countKyuWin(inCardCase);
 			return;
 		}
 		
@@ -101,7 +101,7 @@ public class swea6808_카드게임 {
 			if(!visited[i]) {
 				// do
 				visited[i] = true;
-				inCardCases[depth] = inCards[i];
+				inCardCase[depth] = inCards[i];
 				
 				inCardsOrder(depth+1, visited);
 				// undo
