@@ -81,6 +81,16 @@
 | 4  | 파핑파핑 지뢰찾기           | [🔗 링크](https://swexpertacademy.com/main/talk/solvingClub/problemView.do?solveclubId=AZg2OLnqix_HBINp&contestProbId=AV5LwsHaD1MDFAXc&probBoxId=AZkiYPNa9hTHBIO0&type=PROBLEM&problemBoxTitle=250908%EB%AC%B8%EC%A0%9C%EB%B0%95%EC%8A%A4%28%EC%84%A0%ED%83%9D%29&problemBoxCnt=1) |
 
 </details>
+<details>
+<summary><strong>📁 Week 7 - 9월3주차 백투백 알고리즘 스터디</strong></summary>
+
+| 번호 | 문제                       | 문제 페이지                                                                 |
+| -- | -------------------------- | ------------------------------------------------------------------------ |
+| 1  | 연구소                         | [🔗 링크](https://www.acmicpc.net/problem/14502) |
+| 2  | 규영이와 인영이의 카드게임         | [🔗 링크](https://swexpertacademy.com/main/talk/solvingClub/problemView.do?solveclubId=AZg2OLnqix_HBINp&contestProbId=AWgv9va6HnkDFAW0&probBoxId=AZkEa2gqkeXHBIO0&type=PROBLEM&problemBoxTitle=250902%EB%AC%B8%EC%A0%9C%EB%B0%95%EC%8A%A4%28%EC%84%A0%ED%83%9D%29&problemBoxCnt=2#none) |
+| 3  | 치킨 배달                        | [🔗 링크](https://www.acmicpc.net/problem/15686) |
+
+</details>
 
 
 ---
