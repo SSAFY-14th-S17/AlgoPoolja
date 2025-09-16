@@ -1,0 +1,18 @@
+week: 7
+topic: "9월3주차"
+problems:
+  - number: 1
+    title: "연구소"
+    platform: "BOJ"
+    level: "Gold4"
+    url: "https://www.acmicpc.net/problem/14502"
+  - number: 2
+    title: "규영이와 인영이의 카드게임"
+    platform: "SWEA"
+    level: "D3"
+    url: "https://swexpertacademy.com/main/talk/solvingClub/problemView.do?solveclubId=AZg2OLnqix_HBINp&contestProbId=AWgv9va6HnkDFAW0&probBoxId=AZkEa2gqkeXHBIO0&type=PROBLEM&problemBoxTitle=250902%EB%AC%B8%EC%A0%9C%EB%B0%95%EC%8A%A4%28%EC%84%A0%ED%83%9D%29&problemBoxCnt=2#none"
+  - number: 3
+    title: "치킨 배달"
+    platform: "BOJ"
+    level: "Gold5"
+    url: "https://www.acmicpc.net/problem/15686"
