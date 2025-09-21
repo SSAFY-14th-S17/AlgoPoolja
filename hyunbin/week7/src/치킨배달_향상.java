@@ -16,10 +16,7 @@ public class 치킨배달_향상 {
 	 *  logic : 
 	 *	choose amount of K at the left bucket until M .
 	 * 	And choose amout of K-M at the right bucket;
-	 *  
 	 *  At the each buckets there are vectors of the minimum distance of chicken to house.
-	 *  
-	 *  
 	 */
 	// 이 배열이 무슨 말이냐면 ... List<int[]> 배열 값을 지닌 배열 선언 int[] 는 뭐야? int 값을 가진 배열이잖아!! 
 	// 유레카! 그러니까 List<int[]>[] 은 List<int[]> 배열을 가진 배열..! 
