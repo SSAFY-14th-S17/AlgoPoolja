@@ -1,0 +1,106 @@
+package study;
+
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.PriorityQueue;
+import java.util.StringTokenizer;
+
+public class 도시분할계획_1647 {
+
+	// 우선순위 큐로 만들기
+	static class Edge implements Comparable<Edge> { // Comparable 넣는 걸 까먹었다.
+		int to;
+		int path;
+
+		public Edge(int to, int path) {
+			super();
+			this.to = to;
+			this.path = path;
+		}
+
+		@Override
+		public int compareTo(Edge o) {
+			return this.path - o.path;
+		}
+	}
+
+	public static void main(String[] args) throws IOException {
+		System.setIn(new FileInputStream("src/input.txt"));
+
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+		StringTokenizer st = new StringTokenizer(br.readLine());
+		int N = Integer.parseInt(st.nextToken());
+		int M = Integer.parseInt(st.nextToken());
+
+		// 집의 개수
+		// 길의 개수
+		List<Edge>[] home = new ArrayList[N + 1];
+		// 리스트 초기화 필요
+		for (int i = 1; i <= N; i++) {
+			home[i] = new ArrayList<>();
+		}
+
+		for (int i = 0; i < M; i++) {
+			st = new StringTokenizer(br.readLine());
+			int A = Integer.parseInt(st.nextToken());
+			int B = Integer.parseInt(st.nextToken());
+			int C = Integer.parseInt(st.nextToken());
+
+			home[A].add(new Edge(B, C));
+			home[B].add(new Edge(A, C));
+		}
+
+		// 최소신장트리 만들기
+		// 어떻게 만들더라..?
+		// 프림 알고리즘 -> 큐를 돌면서 가중치가 가장 작은 것 뽑기
+		// 큐를 만들고 -> for문을 돌아?
+
+		PriorityQueue<Edge> pq = new PriorityQueue<>();
+		// visited 배열을 만들어
+		boolean[] visited = new boolean[N + 1];
+		visited[1] = true;
+
+		// 이 아래부터는 내가 못 쓴 것. 지피티가 알려준 것
+
+		int pick = 0; // 이걸 까먹음. N -1개 뽑으면 멈춤
+
+		List<Integer> costs = new ArrayList<>();
+
+		for (Edge e : home[1]) { // 1번과 연결되어 있는 지 모두 큐에 넣는다.
+			pq.add(e);
+		}
+
+		// N -1개 뽑을 때까지 반복
+		while (pick < N - 1) {
+			Edge e = pq.poll(); // 비용이 가장 적은 간선을 꺼낸다.
+			// 이미 방문했으면 넘어가
+			if (visited[e.to]) {
+				continue;
+			}
+			visited[e.to] = true;
+			pick++;
+			costs.add(e.path);
+
+			pq.addAll(home[e.to]);
+		}
+
+		int maxCost = Collections.max(costs);
+		int totalCost = 0;
+
+		for (int i = 0; i < costs.size(); i++) {
+			totalCost += costs.get(i);
+		}
+		int ans = totalCost - maxCost;
+
+		System.out.println(ans);
+
+	}
+}

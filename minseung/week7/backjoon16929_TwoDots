@@ -1,0 +1,83 @@
+package study;
+
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.StringTokenizer;
+
+public class twoDots {
+	static boolean[][] visited;
+	// 우, 하, 좌, 상
+	static int[] di = { 0, 1, 0, -1 };
+	static int[] dj = { 1, 0, -1, 0 };
+	static char[][] board;
+	static int N, M;
+	static int startX, startY;
+
+	public static void main(String[] args) throws IOException {
+		System.setIn(new FileInputStream("src/input.txt"));
+
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+		StringTokenizer st = new StringTokenizer(br.readLine());
+
+		N = Integer.parseInt(st.nextToken());
+		M = Integer.parseInt(st.nextToken());
+
+		board = new char[N][M];
+
+		for (int i = 0; i < N; i++) {
+			String str = br.readLine();
+			for (int j = 0; j < M; j++) {
+				board[i][j] = str.charAt(j);
+			}
+		}
+
+		visited = new boolean[N][M];
+
+		boolean isCycle = false;
+		// dfs로 풀기
+		for (int i = 0; i < N; i++) {
+			for (int j = 0; j < M; j++) {
+				// +새로운 탐색을 시작할 때마다 visited 배열 초기화
+				visited = new boolean[N][M];
+				startX = i;
+				startY = j;
+				if (dfs(i, j, 1, i, j)) {
+					isCycle = true;
+					break;
+				}
+			}
+			if (isCycle)
+				break;
+		}
+		System.out.println(isCycle ? "Yes" : "No");
+	}
+
+	static boolean dfs(int x, int y, int count, int prevX, int prevY) {
+		// + 방문처리
+		visited[x][y] = true;
+
+		for (int i = 0; i < 4; i++) {
+			int nx = x + di[i];
+			int ny = y + dj[i];
+
+			if (nx >= 0 && nx < N && ny >= 0 && ny < M && board[nx][ny] == board[x][y]) {
+				// 다음 위치가 시작점이고, 경로의 길이가 4이상일 경우 -> 종료
+				if (nx == startX && ny == startY && count >= 4) {
+					return true;
+				}
+				// 다음 위치가 이전에 방문던 점이 아니면 dfs호출
+				 if (!(nx == prevX && ny == prevY) && !visited[nx][ny]) {
+					if (dfs(nx, ny, count + 1, x, y)) {
+						return true;
+					}
+				}
+			}
+		}
+		// 사이클을 찾지 못했으면 방문 상태를 해제
+		visited[x][y] = false;
+		return false;
+	}
+}
