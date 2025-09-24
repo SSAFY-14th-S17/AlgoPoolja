@@ -68,6 +68,7 @@ public class twoDots {
 				if (nx == startX && ny == startY && count >= 4) {
 					return true;
 				}
+				
 				// 다음 위치가 이전에 방문던 점이 아니면 dfs호출
 				 if (!(nx == prevX && ny == prevY) && !visited[nx][ny]) {
 					if (dfs(nx, ny, count + 1, x, y)) {
