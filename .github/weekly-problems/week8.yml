@@ -1,0 +1,23 @@
+week: 8
+topic: "9월4주차"
+problems:
+  - number: 1
+    title: "계단오르기"
+    platform: "BOJ"
+    level: "Silver3"
+    url: "https://www.acmicpc.net/problem/2579
+  - number: 2
+    title: "Two dots"
+    platform: "BOJ"
+    level: "Gold4"
+    url: "https://www.acmicpc.net/problem/16929"
+  - number: 3
+    title: "도시 분할 계획"
+    platform: "BOJ"
+    level: "Gold4"
+    url: "https://www.acmicpc.net/problem/1647"
+  - number: 4
+    title: "퇴사"
+    platform: "BOJ"
+    level: "Silver3"
+    url: "https://www.acmicpc.net/problem/14501"
