@@ -1,53 +1,115 @@
 name: Create Weekly Problem Issues
 
 on:
-  workflow_dispatch:  # 수동 실행만 허용
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
 
 jobs:
   create_issues:
     runs-on: ubuntu-latest
 
     env:
-      GH_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}  
+      # GitHub가 주는 기본 토큰 (리포지토리 권한 내)
+      GITHUB_TOKEN: ${{ github.token }}
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Setup Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
-          python-version: '3.x'
+          python-version: "3.x"
 
       - name: Install dependencies
         run: pip install pyyaml
 
-      - name: Check gh auth  
+      - name: Check gh auth
         run: gh auth status
 
       - name: Create issues from YAML
+        shell: bash
         run: |
-          python <<EOF
-          import yaml
+          set -euo pipefail
+          python <<'EOF'
+          import os, sys
           from pathlib import Path
-          import os
+          import yaml
+          import shlex
+          import subprocess
 
-          # 최신 week*.yml 불러오기
-          path = sorted(Path(".github/weekly-problems").glob("week*.yml"))[-1]
-          with open(path, encoding="utf-8") as f:
-              data = yaml.safe_load(f)
+          def fail(msg: str):
+              print(f"[ERROR] {msg}", file=sys.stderr)
+              sys.exit(1)
+
+          # 1) 최신 week*.yml 찾기
+          base = Path(".github/weekly-problems")
+          files = sorted(base.glob("week*.yml"))
+          if not files:
+              fail(f"No week*.yml found in {base}")
+
+          path = files[-1]
+          print(f"[INFO] Using YAML: {path}")
+
+          # 2) YAML 로드 (멀티 문서 안전)
+          try:
+              with open(path, encoding="utf-8") as f:
+                  docs = list(yaml.safe_load_all(f))
+          except yaml.YAMLError as e:
+              print("[ERROR] YAML parse failed")
+              if hasattr(e, "problem_mark") and e.problem_mark:
+                  m = e.problem_mark
+                  print(f" -> Line {m.line+1}, Column {m.column+1}")
+              print(getattr(e, "problem", ""))
+              print(getattr(e, "context", ""))
+              raise
+
+          if not docs or docs[0] is None:
+              fail("Empty YAML or no documents found.")
+
+          data = docs[0]
+          # 3) 필수 키 검증
+          for k in ("week", "topic", "problems"):
+              if k not in data:
+                  fail(f"Missing top-level key: {k}")
 
           week = data["week"]
           topic = data["topic"]
           problems = data["problems"]
 
+          if not isinstance(problems, list) or not problems:
+              fail("`problems` must be a non-empty list.")
+
+          # 4) 각 문제 항목 키 검증
+          required_p_keys = ("number", "title", "url", "platform", "level")
+          for i, p in enumerate(problems, 1):
+              if not isinstance(p, dict):
+                  fail(f"Problem #{i} is not a mapping(dict).")
+              missing = [k for k in required_p_keys if k not in p]
+              if missing:
+                  fail(f"Problem #{i} missing keys: {missing}")
+
+          # 5) 이슈 생성
+          #    라벨은 쉼표 충돌 방지를 위해 --label 여러 번 사용
+          def run_gh(cmd: list[str]):
+              print("[RUN]", " ".join(shlex.quote(c) for c in cmd))
+              res = subprocess.run(cmd, text=True)
+              if res.returncode != 0:
+                  fail(f"Command failed: {' '.join(cmd)}")
+
           for p in problems:
               title = f"{week}주차 문제 {p['number']} <{p['title']}>"
               body = f"**문제 {p['number']}: {p['title']}**\n\n[문제 사이트]({p['url']})"
-              labels = [p['platform'], p['level'], f"week{week}", topic]
 
-              label_str = ",".join(labels)
-              cmd = f'gh issue create --title "{title}" --body "{body}" --label "{label_str}"'
-              print(f"Running: {cmd}")
-              os.system(cmd)
+              labels = [str(p['platform']), str(p['level']), f"week{week}", str(topic)]
+              cmd = ["gh", "issue", "create", "--title", title, "--body", body]
+              for lab in labels:
+                  cmd += ["--label", lab]
+
+              run_gh(cmd)
+
+          print("[INFO] All issues created successfully.")
           EOF
