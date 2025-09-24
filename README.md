@@ -93,7 +93,7 @@
 </details>
 
 <details>
-<summary><strong>📁 Week 8 - 9월4주차</strong></summary>
+<summary><strong>📁 Week 8 - 9월4주차/알고리즘 응용 월말평가 대비</strong></summary>
 
 | 번호 | 문제           | 문제 페이지                                      |
 | ---- | -------------- | ------------------------------------------------ |
