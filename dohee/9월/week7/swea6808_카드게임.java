@@ -25,32 +25,32 @@ import java.util.List;
  * Q : 규영이가 이기는 경우와 지는 경우가 총 몇 가지인가?
  */
 public class swea6808_카드게임 {
-	
+
 	static int[] kyuCards= new int[9];
 	static int[] inCards= new int[9];
 	static int[] inCardCase = new int[9];
 	static final int TotalCount = 362880;
 	static int kyuWincount;
-	
+
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		
+
 		int T = Integer.parseInt(br.readLine());
-	
-		
+
+
 		for(int t=1; t<=T; t++) {
-			
+
 			// [input]
 			String[] temp = br.readLine().split(" ");
-			
-			
-			
+
+
+
 			// 1 ~ 18까지의 카드
 			List<Integer> cards = new ArrayList<>() ;
 			for(int i=1; i<=18; i++) {
 				cards.add(i);
 			}
-			
+
 
 			// 규영이 카드
 			for(int i=0; i<9; i++) {
@@ -59,13 +59,13 @@ public class swea6808_카드게임 {
 					cards.remove(Integer.valueOf(kyuCards[i]));
 				}
 			}
-			
+
 			// 인영이 카드
 			for(int i=0; i<9; i++) {
 				inCards[i] = cards.get(i);
 			}
-			
-			
+
+
 			//System.out.println(Arrays.toString(kyuCards));
 			//System.out.println(Arrays.toString(inCards));
 
@@ -75,18 +75,19 @@ public class swea6808_카드게임 {
 			kyuWincount = 0; // 규영이가 몇 번 이기는지 카운트
 
 			inCardsOrder(0, visited); // 인영이 카드의 순열을 구해 차례대로 -> countKyuWin 
-			
-		System.out.println("#"+t+" "+kyuWincount+ " " + (TotalCount-kyuWincount));
-			
-			
-			
+
+			// [output]
+			System.out.println("#"+t+" "+kyuWincount+ " " + (TotalCount-kyuWincount));
+
+
+
 		}// for: T
-		
+
 	}// main
 
 	/**
-	 * 인영이의 카드 순열 생성하는 함
-	 * @param depth: 현재 몇 번째 카드인
+	 * 인영이의 카드 순열 생성하는 함수
+	 * @param depth: 현재 몇 번째 카드인가
 	 * @param visited: 방문 체크
 	 */
 	private static void inCardsOrder(int depth,boolean[] visited) {
@@ -95,21 +96,21 @@ public class swea6808_카드게임 {
 			countKyuWin(inCardCase);
 			return;
 		}
-		
+
 		for(int i=0; i<9;i++) {
-			
+
 			if(!visited[i]) {
 				// do
 				visited[i] = true;
 				inCardCase[depth] = inCards[i];
-				
+
 				inCardsOrder(depth+1, visited);
 				// undo
 				visited[i] = false;
-				
+
 			}
 		}
-		
+
 	}//
 
 	/**
