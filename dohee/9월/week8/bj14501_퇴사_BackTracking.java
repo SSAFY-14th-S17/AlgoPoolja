@@ -1,16 +1,28 @@
 package week8;
 
+/*
+ * N+1일째 되는 날 퇴사하기 위해
+ * 남은 N일 동안 최대한 많은 상담을 하기
+ * Ti:i번째 날 상담을 했을 때 걸리는 일 수
+ * Pi:i번째 날 상담을 했을 때 받을 수 있는 금액
+ * 백준이가 얻을 수 있는 최대 수익?
+ * 
+ * [문제 풀이]
+ * BackTracking?
+ * - i번째 날 상담을 한다 / 안 한다의 경우로 나누어 최댓갑 구함
+ * - 조건(base-case): i번째 날 + i번째 날 상담했을 대 걸리는 일수 < N+1 
+ */
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Arrays;
 
-public class bj14501_퇴사 {
+public class bj14501_퇴사_BackTracking {
 	static int Max = 0;
-	static int N;
-	static int[] Ti;
-	static int[] Pi;
+	static int N; // 앞으로 근무가 가능한 일 수
+	static int[] Ti; // i번째날 상담을 했을 때 걸리는 일 수
+	static int[] Pi; //i번째날 상담을 했을 때 받을 수 있는 금액
 
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -29,7 +41,7 @@ public class bj14501_퇴사 {
 		}
 
 		//System.out.println(Arrays.toString(Ti));
-		//System.out.rintln(Arrays.toString(Pi));
+		//System.out.println(Arrays.toString(Pi));
 
 		// [logic]
 		findMax(1,0);
@@ -40,6 +52,11 @@ public class bj14501_퇴사 {
 
 	}// main
 
+	/**
+	 * 수익의 최댓값을 구하는 백트래킹 함수
+	 * @param currentDay: 현재 보고 있는 n번째 일수
+	 * @param sumTilNow: 현재까지 수익의 총합
+	 */
 	private static void findMax(int currentDay, int sumTilNow) {
 		// base-case
 		if(currentDay > N) {
