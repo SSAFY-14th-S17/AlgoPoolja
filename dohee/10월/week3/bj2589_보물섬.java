@@ -32,8 +32,6 @@ public class bj2589_보물섬 {
 			}
 		}
 		
-		//System.out.println(Arrays.deepToString(map));
-		
 		
 		 // [logic]
 		// 모든 육지 쌍 중 가장 긴 최단거리
@@ -44,10 +42,7 @@ public class bj2589_보물섬 {
 				}
 			}
 		}
-		
 		System.out.println(maxDist);
-		
-	
 	}// main
 
 	// 하나의 클러스터당 돌릴 bfs
